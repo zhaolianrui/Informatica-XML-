@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>赵连睿</author>
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>527</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>批量生成Informatica配置参数XML文件</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>鲨鱼.png</normaloff>鲨鱼.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>如有使用问题请@联赵连睿18663771449</string>
+  </property>
+  <widget class="QPushButton" name="open">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>打开excel文件</string>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>打开.png</normaloff>打开.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>170</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>请选择保存目录</string>
+   </property>
+   <property name="text">
+    <string>保存目录</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>保存.png</normaloff>保存.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>100</y>
+     <width>321</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="generate">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>240</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>点击即可批量生成xml文件</string>
+   </property>
+   <property name="text">
+    <string>批量生成</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>批量生成.png</normaloff>批量生成.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>170</y>
+     <width>321</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>240</y>
+     <width>321</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>DESCRIPTION:</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>71</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>O2M</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>xml/oracle数据库.png</normaloff>xml/oracle数据库.png</iconset>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>M2G</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>xml/mysql数据库.png</normaloff>xml/mysql数据库.png</iconset>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>O2G</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>xml/oracle数据库.png</normaloff>xml/oracle数据库.png</iconset>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>40</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>REPOSITORY_NAME:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>40</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>默认值为rep</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="text">
+    <string>rep</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>comboBox</tabstop>
+  <tabstop>lineEdit_4</tabstop>
+  <tabstop>open</tabstop>
+  <tabstop>save</tabstop>
+  <tabstop>generate</tabstop>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>open</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>getFileName()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>save</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>getFileDirectory()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>getFileName()</slot>
+  <slot>getFileDirectory()</slot>
+ </slots>
+</ui>

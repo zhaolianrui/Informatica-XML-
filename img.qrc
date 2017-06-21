@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/" >
+    <file>img/保存.png</file>
+    <file>img/打开.png</file>
+    <file>img/批量生成.png</file>
+    <file>img/鲨鱼.png</file>
+    <file>img/oracle数据库.png</file>
+    <file>img/mysql数据库.png</file>
+  </qresource>
+</RCC>
